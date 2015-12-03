@@ -1,0 +1,6 @@
+sndpeek //source liegt bei, bin ist vorcompiliert auf i686, für ubuntu und 64bit kann ich support bieten
+xautomation
+bash //^^
+scrot // Kann gegen imagemagicks "import" getauscht werden, Script muss dann angepasst werden. (scrot gegen import -w root $image)
+freeglut (sndpeek)
+imagemagick (for the paternmaker)

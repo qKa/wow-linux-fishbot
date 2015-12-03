@@ -1,0 +1,26 @@
+#!/bin/bash
+#paternmaker
+pid=$(pgrep -fl Wow.exe)
+now=$(date +"%H-%M-%S")
+pats=$(ls ./patfiles/ | wc -l)
+counter=0
+
+if [ "$pid" = "" ]
+	then
+	echo -e "[ $now ] \033[1;31mStart WoW First :)\033[0m"
+else
+	for i in {0..10}; do 
+		now=$(date +"%H-%M-%S")
+		echo -ne "[ $now ] Taking Screenshot: \033[1;31m$i"'\r\033[0m'; 
+		echo -ne "[ $now ] Please switsh to WoW"; 
+		sleep 1; 	
+	done; echo
+	import -quality 100 /tmp/fishbot-$now.png
+	echo -e "[ $now ] Taking Screenshot"
+	num=$(($pats+1))
+	png2pat /tmp/fishbot-$now.png > /tmp/fishbot$num.pat
+	echo -e "[ $now ] Create fishbot$num.pat"
+	echo -e "[ $now ] Moving fishbot$num.pat to `pwd`/patfiles"
+	mv /tmp/fishbot$num.pat ./patfiles
+	echo -e "[ $now ] done"
+fi

@@ -1,0 +1,17 @@
+Moin :)
+
+Ich hatte/hab den Bot mit sndpeek laufen, hab eh immer ein Headset auf und nachm zocken Headset hinlegen und fischen funktionierte gut :)
+Das Script ist also für diesen zweck und für meinem Pc gebaut worden.
+Die Erkennung erfolgt über die fish.pat Datei, bei mir und einem Tester geht sie dank Toleranz, es kann sein das ihr sie neu erstellen müsst (blau/roter übergang beim schwimmer ausschneiden und mit png2pat convertieren)
+Sndpeek stellt den Input grafisch oder im Terminal dar..Das heißt ihr müsst das Mic an den Kopfhörer (output) packen. 
+
+Ich arbeite grade an einer neuen Sounderkennung, also ohne Mikrokram usw sondern direkt vom output via dB:
+--> http://laugeo.free.fr/ameter.html
+Finde die methode für mich zweckmäßig.
+Für die breite Masse ist es noch nix, sowas müsste in C geschrieben werden, hier ist ein netter Artikel dazu:
+--> http://www.mmowned.com/forums/general/programming/268030-intro-basic-automation-x11-gnu-linux-2.html
+Mein Script soll nur nen Anreitz sein, unter Linux ist manches einfach im Terminal machbar, das will ich damit zeigen :)
+
+Vieleicht steigere ich damit ja die Kreativität des einen oder anderen Linuxusers :D
+
+Gruß eek
